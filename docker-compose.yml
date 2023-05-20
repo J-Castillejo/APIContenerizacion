@@ -2,7 +2,9 @@ version: "3.9"
 services:
   api:
     container_name: API
-    image: jhanherrera/api-contenedor:v2
+    image: jhanherrera/api-contenedor:v3
+    build:
+      context: .
     ports:
       - "4001:4001" 
     networks:
